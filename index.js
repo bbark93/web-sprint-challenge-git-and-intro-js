@@ -245,11 +245,17 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(array) {
+  const newArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    newArray[i] = array[i].name;
+  }
+  return newArray;
 }
 
-
+const nameArray = listOfNames(artists);
+console.log('task 4:', nameArray);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:

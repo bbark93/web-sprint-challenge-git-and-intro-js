@@ -291,11 +291,22 @@ Use addArtist to do the following:
 5. Add the newly created object to the copied array, then return the copied array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array, str1, str2, str3, str4, str5) {
+  const obj = {
+    name: str1,
+    years: str2,
+    genre: str3,
+    nationality: str4,
+    bio: str5
+  }
+
+  array.push(obj);
+  return array;
 }
 
+const largerArray = addArtist(artists, "john Doe", "1988-2022", "Full Stack Development", "African American", "I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.");
 
+console.log('task 6:', largerArray);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 

@@ -348,7 +348,7 @@ function artistInfo(array, str1){
   }
 }
 
-console.log(artistInfo(artists,'Frida Kahlo'));
+console.log('task 8:', artistInfo(artists,'Frida Kahlo'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistByCountry to do the following: 
